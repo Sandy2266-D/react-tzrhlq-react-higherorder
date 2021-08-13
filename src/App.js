@@ -1,11 +1,13 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
+import WithBorders from './WithBorders';
 
-export default function App() {
+function App(props) {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <h1>Hello {props.name}</h1>
     </div>
   );
 }
+
+export default WithBorders(App);
